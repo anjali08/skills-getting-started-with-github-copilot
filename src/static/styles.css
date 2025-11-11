@@ -63,6 +63,12 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(26, 35, 126, 0.12);
 }
 
 .activity-card h4 {
@@ -141,4 +147,68 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participants section */
+.participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.participants strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.participants-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #444;
+}
+
+.participants-list li {
+  padding: 4px 0;
+  font-size: 14px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.03);
+}
+
+/* Delete button next to participant */
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+  color: #b71c1c;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  color: #444;
+  flex: 1 1 auto;
+  word-break: break-word;
+}
+
+.no-participants {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
 }
